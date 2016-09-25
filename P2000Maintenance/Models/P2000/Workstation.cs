@@ -13,12 +13,14 @@ namespace P2000Maintenance.Models.P2000
         public bool Server { get; set; }
         public string Version { get; set; }
         public string OnlineDate { get; set; }
+        public string LoggedOnUser { get; set; }
         [Display(Name = "IP Address")]
         public string Ip_Address { get; set; }
         [Display(Name = "Ping Time")]
         public long PingTime { get; set; }
         [Display(Name = "Online")]
         public bool Online { get; set; }
+        public bool LoggedIn { get; set; }
 
         public override string ToString()
         {

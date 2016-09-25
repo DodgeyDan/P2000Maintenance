@@ -16,13 +16,6 @@ namespace P2000Maintenance.Models.P2000
         public Partition()
         {
             this.p2000Devices = new HashSet<P2000DBHardware>();
-            /*
-        this.inputs = new HashSet<Input>();
-        this.outputs = new HashSet<Output>();
-        this.panels = new HashSet<Panel>();
-        this.workstations = new HashSet<Workstation>();
-        this.terminals = new HashSet<Terminal>();
-        */
         }
 
         public override string ToString()

@@ -420,7 +420,7 @@ namespace P2000Maintenance.Models
                 using (SqlConnection connection = new SqlConnection(connection_string))
                 {
                     connection.Open();
-                    string query_string = "select * from Pegasys.dbo.station";
+                    string query_string = "select * from Pegasys.dbo.station left join Pegasys.dbo.station_stat on sstat_station_id = stn_id";
                     using (SqlCommand command = new SqlCommand(query_string, connection))
                     {
                         SqlDataReader reader = command.ExecuteReader();
@@ -451,11 +451,20 @@ namespace P2000Maintenance.Models
                                     model.Version += reader["stn_minor_version"].ToString().Trim() + ".";
                                     model.Version += reader["stn_build_version"].ToString().Trim();
                                     model.Name = reader["stn_name"].ToString().Trim();
-                                    model.Online = false;
+                                    model.LoggedOnUser = reader["sstat_username"].ToString().Trim();
+                                    if (model.LoggedOnUser.Length == 0)
+                                    {
+                                        model.LoggedIn = false;
+                                    }
+                                    else
+                                    {
+                                        model.LoggedIn = true;
+                                    }
+                                    model.LoggedOnUser = model.LoggedOnUser.Length.ToString();
                                     model.PingTime = 0;
                                     model.Ip_Address = "0.0.0.0";
                                     model.Guid = reader["stn_guid"].ToString().Trim();
-                                    model.OnlineDate = reader["stn_station_timestamp"].ToString().Trim();
+                                    model.OnlineDate = reader["sstat_timestamp"].ToString().Trim();
                                     db.Workstations.Add(model);
                                 }
                             }
