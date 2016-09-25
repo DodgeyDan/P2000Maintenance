@@ -1,0 +1,98 @@
+﻿@model P2000Maintenance.Models.P2000.Input
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Input</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Partition)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Partition.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Panel)
+        </dt>
+
+        <dd>
+            @if (Model.Panel == null)
+            {
+                @Html.DisplayFor(model => model.Terminal.Panel.Name)
+            }
+            else
+            {
+                @Html.DisplayFor(model => model.Panel.Name)
+            }
+            
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Terminal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Terminal.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Enabled)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Enabled)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoftInput)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoftInput)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastMaintained)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastMaintained)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Technician)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Technician)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,80 @@
+﻿@model P2000Maintenance.Models.P2000.Input
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Input</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ip_partition)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ip_partition)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Enabled)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Enabled)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SoftInput)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoftInput)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastMaintained)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastMaintained)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Technician)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Technician)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

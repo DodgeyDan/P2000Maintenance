@@ -1,0 +1,162 @@
+﻿@model P2000Maintenance.Models.P2000.Terminal
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detail</h2>
+
+<div>
+    <h4>Terminal</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Index)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Index)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReaderType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReaderType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReaderEnabled)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReaderEnabled)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReaderModule)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReaderModule)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReaderIndex)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReaderIndex)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IOType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IOType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InputEnabled)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InputEnabled)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InputModule)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InputModule)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InputIndex)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InputIndex)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OutputEnabled)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OutputEnabled)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OutputModule)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OutputModule)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OutputIndex)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OutputIndex)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Enabled)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Enabled)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Guid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Guid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastMaintained)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastMaintained)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Technician)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Technician)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Included)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Included)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

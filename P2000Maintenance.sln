@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P2000Maintenance", "P2000Maintenance\P2000Maintenance.csproj", "{7E375F37-0D3B-4F90-9016-4C3B643B5C3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P2000Maintenance.Tests", "P2000Maintenance.Tests\P2000Maintenance.Tests.csproj", "{9600F574-F144-48B6-B7F0-5026F2A6568D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E375F37-0D3B-4F90-9016-4C3B643B5C3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E375F37-0D3B-4F90-9016-4C3B643B5C3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E375F37-0D3B-4F90-9016-4C3B643B5C3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E375F37-0D3B-4F90-9016-4C3B643B5C3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9600F574-F144-48B6-B7F0-5026F2A6568D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9600F574-F144-48B6-B7F0-5026F2A6568D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9600F574-F144-48B6-B7F0-5026F2A6568D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9600F574-F144-48B6-B7F0-5026F2A6568D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
